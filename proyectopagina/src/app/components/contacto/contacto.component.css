@@ -1,0 +1,21 @@
+.colorTitles{
+  color: var(--color2);
+  min-height: 15vh;
+}
+
+.texto-encima{
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.carouselImages{
+  filter: brightness(50%);
+}
+.actionbuttons{
+  background-color: var(--color2)
+}
+
+.contactoTitle{
+  color: var(--color3);
+}

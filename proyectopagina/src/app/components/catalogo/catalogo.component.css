@@ -1,0 +1,50 @@
+.catalogSection{
+  display: flex;
+  justify-content: center;
+}
+.actionbuttons{
+  background-color: var(--color2)
+}
+
+.catalogSectionColor{
+  background-color: black;
+}
+
+.colorTitles{
+  color: var(--color2);
+  min-height: 15vh;
+}
+
+.catalogParagraph{
+  min-height: 10vh;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.card-color{
+  background-color: var(--color3);
+}
+.colorTextCards{
+  color:var(--color2)
+}
+
+.texto-encima{
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.carouselImages{
+  filter: brightness(50%);
+}
+
+.text-catalogo{
+  text-align: center;
+
+}
+
+
+.catalogTextSection {
+  background-color: black;
+  padding: 38px;
+}

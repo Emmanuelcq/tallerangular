@@ -1,0 +1,19 @@
+.colorFooter{
+  background-color: var(--color1);
+  height: 190px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.enlacesFooter{
+color: var(--color4);
+text-decoration: none;
+
+}
+
+.enlacesFooter:hover{
+  color: var(--color2) !important;
+
+}

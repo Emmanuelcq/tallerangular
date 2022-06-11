@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+:root{
+    --color1:#000000;
+    --color2: #446A46;
+    --color3: #82A284;
+    --color4: #FFFFFF
+    --color5: #C10D00
+}
+
+*{
+    font-family: 'PT Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.colorTitles{
+  color: var(--color2);
+  min-height: 15vh;
+}

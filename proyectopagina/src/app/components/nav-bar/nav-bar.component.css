@@ -1,0 +1,19 @@
+.navbarCustom{
+  background-color: var(--color1)
+}
+
+.navbarEnlaces{
+  color: var(--color4)
+}
+
+
+.navbarEnlaces:hover{
+  text-decoration: underline;
+  color: var(--color4)
+
+}
+
+.navbarFlex{
+  display: flex;
+  justify-content: flex-end;
+}

@@ -1,0 +1,34 @@
+
+<div class="d-flex justify-content-center align-content-center py-5 flex-column">
+    <h1 class="text-center colorTitles fw-bold">Adminisitración del sitio</h1>
+    <h5 class="text-center colorTitles fs-2">Contactos</h5>
+</div>
+
+<div class="container">
+    <table *ngIf="listContactos.length > 0" class="table table-striped table-responsive mb-5">
+        <thead>
+            <tr>
+                <th class="colorTitles">Nombre</th>
+                <th class="colorTitles">Edad</th>
+                <th class="colorTitles">Celular</th>
+                <th class="colorTitles">Email</th>
+                <th class="colorTitles" colspan="2">Acciones</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr *ngFor="let contacto of listContactos">
+                  <td class="fw-bold" >{{ contacto.Nombre}}</td>
+                  <td>{{ contacto.Edad }}</td>
+                  <td>{{ contacto.Celular }}</td>
+                  <td>{{ contacto.Email }}</td>
+                  <td colspan="2">
+                      <i  class="fas fa-pen colorEdit" [routerLink]="['/editar-contacto/',contacto._id]" ></i>
+                      <i   (click)="deleteContacto(contacto._id)" class="fas fa-trash colorDelete"></i>
+                  </td>
+              </tr>
+          </tbody>
+      </table>
+
+      <h1 class="text-center" *ngIf="listContactos.length == 0">No hay contactos registrados</h1>
+
+  </div>

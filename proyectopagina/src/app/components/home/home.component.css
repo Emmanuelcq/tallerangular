@@ -1,0 +1,53 @@
+.section1{
+  background-color: var(--color3);
+  padding: 40px;
+}
+
+.carouselImages{
+ filter: brightness(50%);
+
+}
+.colorTitles{
+  color: var(--color2);
+  min-height: 15vh;
+}
+
+.paragraphSpace{
+  min-height: 60vh;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.imageScale{
+  height: 280px;
+}
+
+.article3{
+  display: flex;
+  flex: end
+}
+
+
+.image-hover {
+  transition: transform 0.5s;
+  width: 350px;
+}
+
+.image-hover:hover {
+  transform: scale(1.1);
+}
+
+.promoBanner{
+  background-color: red
+}
+
+.colorLetter{
+  color: var(--color4) !important
+}
+
+.card-link{
+  text-decoration: none;
+  color: var(--color2);
+}
+
+

@@ -1,0 +1,50 @@
+<div>
+  <img class="carouselImages" src="https://images6.alphacoders.com/549/thumb-1920-549198.jpg" width="1360" alt="bicicleta">
+</div>
+
+
+<section class="container texto-encima">
+  <div class="row">
+    <section>
+      <h2 class="text-white mt-5 mb-5 fw-bold">Contáctanos</h2>
+      <h2 class="text-white mt-5 mb-5 fw-bold">{{titulo_formulario|uppercase}} </h2>
+    </section>
+    <div>
+      <form [formGroup]='contactoForm' (ngSubmit)='alimentarContacto()'>
+        <div class="mb-3 col-12 col-md-6">
+          <label for="exampleInputEmail1" class="form-label fw-bold text-white">Nombres</label>
+          <input type="text" formControlName="Nombre" class="form-control">
+          <span *ngIf="contactoForm.get('Nombre')?.hasError('required') &&contactoForm.get('Nombre')?.touched"
+            class="text-warning fw-bold">Este campo es obligatorio</span>
+        </div>
+        <div class="mb-3 col-12 col-md-6">
+          <label for="exampleInputEmail1" class="form-label fw-bold text-white">Edad</label>
+          <input type="text" formControlName="Edad" class="form-control" id="exampleInputEmail1"
+            aria-describedby="emailHelp">
+          <span *ngIf="contactoForm.get('Edad')?.hasError('required') &&contactoForm.get('Edad')?.touched"
+            class="text-warning fw-bold">Este campo es obligatorio</span> <span
+            *ngIf="contactoForm.get('Edad')?.hasError('pattern')" class="text-warning fw-bold">La edad es inválida</span>
+        </div>
+        <div class="mb-3 col-12 col-md-6">
+          <label for="exampleInputEmail1" class="form-label fw-bold text-white">Celular</label>
+          <input type="text" formControlName="Celular" class="form-control" id="exampleInputEmail1"
+            aria-describedby="emailHelp">
+          <span *ngIf="contactoForm.get('Celular')?.hasError('required') &&contactoForm.get('Celular')?.touched"
+            class="text-warning fw-bold">Este campo es obligatorio</span> <span
+            *ngIf="contactoForm.get('Celular')?.hasError('pattern')" class="text-warning fw-bold">El celular es
+            inválido</span>
+        </div>
+        <div class="mb-3 col-12 col-md-6">
+          <label for="exampleInputEmail1" class="form-label fw-bold text-white">Email</label>
+          <input type="email" formControlName="Email" class="form-control" id="exampleInputEmail1"
+            aria-describedby="emailHelp">
+          <span *ngIf="contactoForm.get('Email')?.hasError('required') &&contactoForm.get('Email')?.touched"
+            class="text-warning fw-bold">Este campo es obligatorio</span> <span
+            *ngIf="contactoForm.get('Email')?.hasError('pattern')" class="text-warning fw-bold">El Email es
+            inválido</span>
+        </div>
+        <button type="submit" [disabled]="contactoForm.invalid" class="btn btn-primary actionbuttons">Enviar</button>
+      </form>
+    </div>
+  </div>
+</section>

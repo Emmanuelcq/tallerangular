@@ -1,0 +1,26 @@
+<header>
+    <nav class="navbarCustom navbar navbar-expand-lg">
+
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse navbarFlex" id="navbarNavAltMarkup">
+                <div class=" navbar-nav ">
+                    <a class="navbar-brand" routerLink="">
+                        <img src="https://www.svgrepo.com/show/34940/bicycle.svg" alt="" width="48" height="42">
+                    </a>
+                    <a class="  fs-5 navbarEnlaces nav-link text-white" href="#">Inicio</a>
+                    <a class="fs-5 navbarEnlaces nav-link text-white" [routerLink]="['/catalogo']">Catálogo</a>
+                            <a class=" fs-5  navbarEnlaces nav-link text-white" href="#">Nosotros</a>
+                            <a class=" fs-5  navbarEnlaces nav-link text-white" [routerLink]="['/contacto']" href="#">
+                                Contáctenos <i class="fa fa-phone" aria-hidden="true"></i></a>
+                            <a class=" fs-5  navbarEnlaces nav-link text-white" href="#">Regístrate</a>
+                            <a class="fs-5 navbarEnlaces nav-link text-white" [routerLink]="['/resumen-contactos']">Administrador de contactos</a>
+                </div>
+            </div>
+        </div>
+
+    </nav>
+</header>
